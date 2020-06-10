@@ -1,0 +1,52 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+
+  <f:entry title="详情链接地址Url" field="detailsUrl">
+    <f:textbox  />
+  </f:entry>
+  <f:entry title="附件下载地址Url" field="resourceUrl">
+    <f:textbox  />
+  </f:entry>
+
+  <f:entry title="是否通知构建者">
+      <f:checkbox name="onNotifySelf" value="true" checked="${instance.isOnNotifySelf()}"/>
+  </f:entry>
+  <f:entry title="通知指定用户" field="notifyUsers">
+    <f:textbox  />
+  </f:entry>
+
+  <f:entry title="构建成功时通知">
+      <f:checkbox name="onSuccess" value="true" checked="${instance.isOnSuccess()}"/>
+  </f:entry>
+  <f:entry title="构建失败时通知">
+      <f:checkbox name="onFailed" value="true" checked="${instance.isOnFailed()}"/>
+  </f:entry>
+
+  <f:entry title="自定义消息JSON" field="messageJson" description="参考 &lt;a href=&quot;https://ding-doc.dingtalk.com/doc#/serverapi2/ye8tup&quot; target=&quot;_new&quot;&gt;消息类型与数据格式&lt;/a&gt;">
+    <f:textarea  />
+  </f:entry>
+
+  <!--
+  <f:entry title="添加默认按钮">
+    <f:repeatable var="setuphostEntry" items="${instance.buildhostEntries}">
+      <table width="100%">
+
+        <f:entry title="按钮名称" >
+          <f:textbox name="actionName"/>
+        </f:entry>
+
+        <f:entry title="跳转地址" >
+          <f:textbox name="actionUrl"/>
+        </f:entry>
+
+        <f:entry>
+          <div align="right">
+            <f:repeatableDeleteButton/>
+          </div>
+        </f:entry>
+
+      </table>
+    </f:repeatable>
+  </f:entry>
+  -->
+</j:jelly>

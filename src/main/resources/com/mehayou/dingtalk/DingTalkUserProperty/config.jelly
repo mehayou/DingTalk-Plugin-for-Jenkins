@@ -1,0 +1,7 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout"
+  xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+  <f:entry title="手机号码" field="mobile" description="填写注册钉钉的手机号码，绑定后可通过钉钉接收提醒通知。">
+    <f:textbox name="mobile"/>
+  </f:entry>
+</j:jelly>
