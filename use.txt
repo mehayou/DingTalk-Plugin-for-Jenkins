@@ -2,10 +2,10 @@
 #在maven文件夹下，找到install.cmd并执行其命令，导入两个jar包
 
 #本目录进行cmd操作输出插件
-G:\Jenkins\dingtalk-notifications-plugin-plus>mvn package
+G:\Jenkins\DingTalk-Plugin-for-Jenkins>mvn package
 ……
-[INFO] Generating hpi G:\Jenkins\dingtalk-notifications-plugin-plus\target\dingtalk-notifications-plugin-plus.hpi
-[INFO] Building jar: G:\Jenkins\dingtalk-notifications-plugin-plus\target\dingtalk-notifications-plugin-plus.hpi
+[INFO] Generating hpi G:\Jenkins\DingTalk-Plugin-for-Jenkins\target\dingTalk-plugin-for-jenkins.hpi
+[INFO] Building jar: G:\Jenkins\DingTalk-Plugin-for-Jenkins\target\dingTalk-plugin-for-jenkins.hpi
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
